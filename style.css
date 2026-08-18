@@ -1,18 +1,17 @@
-/* Configurações Gerais */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdf8ff; /* Fundo lilás bem suave */
+    background-color: #fdf8ff;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #6a1b9a; /* Roxo escuro */
+    background-color: #6a1b9a;
     color: white;
     text-align: center;
     padding: 30px 20px;
@@ -29,16 +28,15 @@ header h1 {
     padding: 0 20px;
 }
 
-/* 3 Botões Divididos Igualmente usando Flexbox */
 .botoes-container {
     display: flex;
     justify-content: space-between;
-    gap: 15px; /* Espaço entre os botões */
+    gap: 15px;
     margin-bottom: 25px;
 }
 
 .botao {
-    flex: 1; /* Garante que os 3 fiquem exatamente com o mesmo tamanho */
+    flex: 1;
     background-color: #8e24aa;
     color: white;
     padding: 20px;
@@ -53,13 +51,12 @@ header h1 {
 }
 
 .botao:hover {
-    background-color: #4a148c; /* Roxo mais escuro ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de elevação */
+    background-color: #4a148c;
+    transform: translateY(-2px);
 }
 
-/* Caixa de Mensagem gerada pelo JavaScript */
 .mensagem-oculta {
-    display: none; /* Inicia escondida */
+    display: none;
     background-color: #f3e5f5;
     border-left: 5px solid #8e24aa;
     padding: 15px 20px;
@@ -69,7 +66,6 @@ header h1 {
     font-size: 1.05em;
 }
 
-/* Seções de Conteúdo */
 .secao-conteudo {
     background-color: white;
     padding: 30px;
@@ -84,7 +80,6 @@ header h1 {
     margin-top: 0;
 }
 
-/* Galeria de Imagens */
 .galeria {
     display: flex;
     justify-content: space-between;
@@ -93,12 +88,11 @@ header h1 {
 }
 
 .galeria img {
-    width: 32%; /* Ajusta as 3 imagens lado a lado */
+    width: 32%;
     border-radius: 8px;
     object-fit: cover;
 }
 
-/* Rodapé */
 footer {
     background-color: #222;
     color: white;
