@@ -1,1 +1,109 @@
+/* Configurações Gerais */
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf8ff; /* Fundo lilás bem suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6a1b9a; /* Roxo escuro */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* 3 Botões Divididos Igualmente usando Flexbox */
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Espaço entre os botões */
+    margin-bottom: 25px;
+}
+
+.botao {
+    flex: 1; /* Garante que os 3 fiquem exatamente com o mesmo tamanho */
+    background-color: #8e24aa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+    background-color: #4a148c; /* Roxo mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* Caixa de Mensagem gerada pelo JavaScript */
+.mensagem-oculta {
+    display: none; /* Inicia escondida */
+    background-color: #f3e5f5;
+    border-left: 5px solid #8e24aa;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: #4a148c;
+    font-size: 1.05em;
+}
+
+/* Seções de Conteúdo */
+.secao-conteudo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-left: 5px solid #8e24aa;
+}
+
+.secao-conteudo h2 {
+    color: #6a1b9a;
+    margin-top: 0;
+}
+
+/* Galeria de Imagens */
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 32%; /* Ajusta as 3 imagens lado a lado */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
